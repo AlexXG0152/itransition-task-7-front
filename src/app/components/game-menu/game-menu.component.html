@@ -1,0 +1,16 @@
+<div class="container d-flex">
+
+  <div class="input-group m-3 first">
+    <button class="btn btn-success" (click)="createGame()">Create New Game</button>
+  </div>
+
+  <div class="input-group m-3">
+    <span class="input-group-text" id="basic-addon1">Game ID</span>
+    <input type="text" class="form-control" placeholder="Game id..." aria-label="GameLink"
+      aria-describedby="basic-addon1" #userInputGameId>
+    <button class="btn btn-success" (click)="joinGame(userInputGameId.value)">Enter</button>
+  </div>
+
+</div>
+
+<app-rules></app-rules>
